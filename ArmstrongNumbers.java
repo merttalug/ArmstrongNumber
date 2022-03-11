@@ -15,6 +15,8 @@ public class ArmstrongNumbers {
         }
         while (!asknumber);
 
+        tempnumber = number;
+
         while (tempnumber != 0) {
             tempnumber /= 10;
             digitnumber++;
@@ -31,7 +33,6 @@ public class ArmstrongNumbers {
             res += digitpow;
             tempnumber /= 10;
         }
-
 
         if (res == number) {
             System.out.println(number + " is an Armstrong Number.");
